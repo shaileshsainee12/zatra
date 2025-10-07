@@ -13,7 +13,7 @@ const StationAdmin = () => {
     const [LoginAssetId, setLoginAssetId] = useState(null);
     const columns = [
         {
-            field: "_id", headerName: "Sr. No", width: 90, headerClassName: "health-table-header-style", headerAlign: "center",
+            field: "_id", headerName: "Sr. No", minWidth: 90, headerClassName: "health-table-header-style", headerAlign: "center",
             align: "center",
             sortable: false,
             filterable: false,
@@ -27,21 +27,21 @@ const StationAdmin = () => {
             field: "adminLogin",
             headerName: "Admin Login",
             headerClassName: "health-table-header-style",
-            width: 200,
+            minWidth: 200,
             renderCell: (params) => <span className='cursor-pointer' onClick={() => handleNewLogin(params.row)}><AddCircleTwoToneIcon color='warning' /></span>,
         },
         {
             field: "parent_lookup_name",
             headerName: "State",
             headerClassName: "health-table-header-style",
-            width: 200,
+            minWidth: 200,
             renderCell: (params) => <span>{params.row?.parent_lookup_name || "N/A"}</span>,
         },
         {
             field: "lookup_value",
             headerName: "City / Station",
             headerClassName: "health-table-header-style",
-            width: 200,
+            minWidth: 200,
             flex: 1,
             renderCell: (params) => <span>{params.row?.lookup_value || "N/A"}</span>,
         },

@@ -104,12 +104,13 @@ const LoginListModal = ({ title, open, handleClose, LoginAssetId }) => {
         {
             field: '_id',
             headerName: 'Sr. No',
-            width: 90,
+            minWidth: 90,
             headerAlign: 'center',
             align: 'center',
             sortable: false,
             filterable: false,
             disableColumnMenu: true,
+            headerClassName: "health-table-header-style",
             renderCell: (params) => {
                 const rowIndex = params.api.getSortedRowIds().indexOf(params.id);
                 return (
@@ -122,25 +123,29 @@ const LoginListModal = ({ title, open, handleClose, LoginAssetId }) => {
         {
             field: 'Name',
             headerName: 'Name',
-            width: 200,
+            minWidth: 200,
+            headerClassName: "health-table-header-style",
             renderCell: (params) => <span>{params.row?.Name || 'N/A'}</span>,
         },
         {
             field: 'PhoneNumber',
             headerName: 'Phone Number',
-            width: 200,
+            minWidth: 200,
+            headerClassName: "health-table-header-style",
             renderCell: (params) => <span>{params.row?.PhoneNumber || 'N/A'}</span>,
         },
         {
             field: 'Email',
             headerName: 'Email',
-            width: 200,
+            minWidth: 200,
+            headerClassName: "health-table-header-style",
             renderCell: (params) => <span>{params.row?.Email || 'N/A'}</span>,
         },
         {
             field: 'action',
             headerName: 'Action',
-            width: 150,
+            headerClassName: "health-table-header-style",
+            minWidth: 150,
             renderCell: (params) => (
                 <button
                     className="text-blue-600 underline hover:text-blue-800"
