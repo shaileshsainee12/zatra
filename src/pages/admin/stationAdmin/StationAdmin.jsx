@@ -28,6 +28,7 @@ const StationAdmin = () => {
             headerName: "Admin Login",
             headerClassName: "health-table-header-style",
             minWidth: 200,
+            align: "center",
             renderCell: (params) => <span className='cursor-pointer' onClick={() => handleNewLogin(params.row)}><AddCircleTwoToneIcon color='warning' /></span>,
         },
         {
