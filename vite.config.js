@@ -3,5 +3,11 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // 👈 Important for SPA routing
+  base: '/', 
+  build: {
+    outDir: 'dist',
+  },
+  server: {
+    port: 5173,
+  },
 })
