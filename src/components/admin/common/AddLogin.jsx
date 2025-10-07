@@ -31,8 +31,16 @@ const AddLogin = ({
     const handleAddLogin = async (e) => {
         e.preventDefault();
         setIsLoading(true);
-        console.log(formData);
+
         try {
+            if(!formData?.Name || !formData?.PhoneNumber || !formData?.Password){
+                toast.error("Please fill all the required fields like Name, Phone number and Password");
+                return;
+            }
+            if(isNaN(formData?.PhoneNumber)){
+                toast.error("Please enter a valid phone number");
+                return;
+            }
             const res = await __postApiData("/api/v1/admin/SaveNewZatraLogin", { ...formData, _id: editId || null, LoginAssetId: LoginAssetId, LoginAssetType, LoginAssetRef });
             if (res?.response?.response_code === '200') {
                 refreshList();
