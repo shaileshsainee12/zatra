@@ -72,6 +72,7 @@ const useAdminSidebarLinks = (role) => {
                 { id: "2-26", icon: <CurrencyRupeeTwoToneIcon />, path: "/admin/configuration/currency", title: "Currency" },
             ],
         },
+        { id: "3", icon: <VerifiedUserTwoToneIcon />, link: "/admin/station-admin", label: "Station Admin",dock:true },
        
     ];
 

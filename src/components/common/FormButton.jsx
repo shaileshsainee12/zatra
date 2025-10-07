@@ -2,11 +2,11 @@
 import React from "react";
 import { Button } from "@mui/material";
 
-const FormButton = ({ children, variant = "contained", ...props }) => {
+const FormButton = ({ children, variant = "contained",type="submit", ...props }) => {
   return (
     <Button
       variant={variant} // ✅ use the passed variant
-      type="submit"
+      type={type}
       className="w-full md:max-w-[280px]"
       sx={{
         borderRadius: "4px",

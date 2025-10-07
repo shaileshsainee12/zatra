@@ -29,6 +29,7 @@ import ServiceType from "../pages/admin/configrations/ServiceType";
 import RegistrationFeeCategory from "../pages/admin/configrations/RegistrationFeeCategory";
 import CallActionType from "../pages/admin/configrations/CallActionType";
 import Currency from "../pages/admin/configrations/Currency";
+import StationAdmin from "../pages/admin/stationAdmin/StationAdmin";
 
 const AdminRoutes = () => (
   <Routes>
@@ -66,6 +67,7 @@ const AdminRoutes = () => (
         {/* Catch-all inside configuration */}
         <Route path="*" element={<ErrorPage />} />
       </Route>
+      <Route path="station-admin" element={<StationAdmin />} />
 
       {/*========== Asset Master ==============*/}
 
