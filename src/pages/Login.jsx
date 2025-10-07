@@ -55,7 +55,7 @@ const Login = () => {
     return (
         <div className='h-screen overflow-auto grid  grid-cols-1 md:grid-cols-2 gap-3 p-4'>
             <div className='flex items-center justify-center xs:px-2 sm:px-4 py-4'>
-                <img src="/LoginSide2.png" alt="Signupbg" className='w-full max-h-[600px] h-full object-cover rounded-lg' />
+                <img src="/LoginSide2.jpeg" alt="Signupbg" className='w-full max-h-[600px] h-full object-cover rounded-lg' />
             </div>
             {/*==========  Login Form  start here ==========*/}
             <div className='flex w-full justify-center flex-col py-8 md:py-14 xs:px-4 sm:px-6 md:px-20'>
