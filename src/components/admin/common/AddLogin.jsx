@@ -99,6 +99,7 @@ const AddLogin = ({
                     <FormInput
                         label="Phone number"
                         name="PhoneNumber"
+                        inputMode={"numeric"}
                         placeholder="Enter Phone number"
                         value={formData.PhoneNumber}
                         onChange={updateData}

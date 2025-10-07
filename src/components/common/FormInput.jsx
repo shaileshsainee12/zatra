@@ -8,6 +8,7 @@ const FormInput = ({
   placeholder,
   type = "text",
   options = [],
+  inputMode,
   ...props
 }) => {
   const renderInput = () => {
@@ -46,6 +47,9 @@ const FormInput = ({
             variant="outlined"
             size="small"
             className="custom-input"
+            inputProps={{
+              inputMode: inputMode, // <-- pass inputMode here
+            }}
             {...props}
           />
         );
@@ -106,6 +110,9 @@ const FormInput = ({
             variant="outlined"
             size="small"
             className="custom-input"
+            inputProps={{
+              inputMode: inputMode, // <-- pass inputMode here
+            }}
             {...props}
           />
         );
