@@ -20,11 +20,11 @@ const Navbar = () => {
 
 
   return (
-    <nav className="sticky top-0 bg-white shadow-sm border-b border-gray-200 py-2 z-50 h-24 flex items-center">
+    <nav className="sticky top-0 bg-white shadow-sm border-b border-gray-200 py-2 z-50  flex items-center">
       <div className="container">
         <div className="mx-auto ">
-          <div className="flex justify-between items-center h-16 relative">
-            <img src={Logo} alt="Logo" className="max-w-[100px] h-full" />
+          <div className="flex justify-between items-center  relative">
+            <img src={Logo} alt="Logo" className="max-w-[80px] h-auto" />
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
@@ -32,7 +32,7 @@ const Navbar = () => {
                   <NavLink
                     key={link.name}
                     to={link.href}
-                    className="block px-3 py-2 rounded-md text-lg hover:bg-websecondary hover:text-webprimary font-medium transition-colors duration-200"
+                    className="block px-3 py-2 rounded-md text-lg hover:bg-websecondary hover:text-webprimary font-medium transition-colors duration-200 text-webPara"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.name}

@@ -7,7 +7,9 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: " 1.5rem",
+      },
       screens: {
         "2xl": "1400px",
       },
@@ -31,6 +33,9 @@ export default {
         webring: "var(--web-ring)",
         webBg: "var(--web-background)",
         webforeground: "var(--web-foreground)",
+        webPara: "var(--web-card-foreground)",
+        para: "var(--text-para)",
+        lightTheme: "var(--light-theme)",
         webprimary: {
           DEFAULT: "var(--web-primary)",
           foreground: "var(--weprimary-foreground)",
@@ -70,8 +75,8 @@ export default {
           ring: "var(--sidebar-ring)",
         },
       },
-       boxShadow: {
-        card: "0 0 14px rgba(0, 0, 0, 0.1)", 
+      boxShadow: {
+        card: "0 0 14px rgba(0, 0, 0, 0.1)",
       },
       borderRadius: {
         lg: "var(--web-radius)",
